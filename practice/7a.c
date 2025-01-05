@@ -19,7 +19,7 @@ void print_permissions(struct stat fileStat){
     printf((fileStat.st_mode & S_IXGRP) ? "x" : "-");
     printf((fileStat.st_mode & S_IROTH) ? "r" : "-");
     printf((fileStat.st_mode & S_IWOTH) ? "w" : "-");
-    printf((fileStat.st_mode & S_IXOTH) ? "x" : "-");
+    printf((fileStat.st_mode & S_IXOTH) ? "x " : "- ");
 
 }
 
@@ -44,25 +44,25 @@ void list_directory(const char *dirpath){
                 exit(EXIT_FAILURE);
             }
 
-            printf(" %ld ", fileStat.st_ino);
+            printf(" %ld ",(long)fileStat.st_ino);
 
             print_permissions(fileStat);
 
             printf(" %ld ", (long)fileStat.st_nlink);
 
-            printf("%s %s", getpwuid(fileStat.st_uid)->pw_name, getgrgid(fileStat.st_gid)->gr_name);
+            printf(" %s %s", getpwuid(fileStat.st_uid)->pw_name, getgrgid(fileStat.st_gid)->gr_name);
 
-            printf("%5ld", (long)fileStat.st_size);
+            printf("%5ld ", (long)fileStat.st_size);
 
 
             char timebuf[80];
 
             struct tm *timeinfo = localtime(&fileStat.st_mtime);
 
-            strftime(timebuf, sizeof(timebuf), "%b %d %H:%M", timeinfo);
-            printf("%s", timebuf);
+            strftime(timebuf, sizeof(timebuf), " %b %d %H:%M", timeinfo);
+            printf("%s ", timebuf);
 
-            printf("%s\n",entry->d_name);
+            printf(" %s\n",entry->d_name);
         }
         closedir(dir);
 }
