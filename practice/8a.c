@@ -11,7 +11,7 @@ int main(){
 
     char buffer[100];
     int new_fd,fd;
-    char filename[] = "file.txt" 
+    char filename[] = "file.txt";
     ssize_t bytesRead; 
 
     fd = open(filename, O_RDWR); 
