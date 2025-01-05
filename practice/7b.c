@@ -37,6 +37,7 @@ void removeEmptyFiles(char *dirpath){
         }
 
     }
+    closedir(dir);
 }
 
 
