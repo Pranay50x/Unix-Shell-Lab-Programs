@@ -1,18 +1,17 @@
-#!/bin/bash 
+#!/bin/bash
 
-file_name="temp.txt" 
+file_name="source.txt"
 
-if [ -e "$file_name" ]; 
+if [ -e $file_name ];
 then
-	echo "'$file_name' exists."
-	mv "$file_name" "old_${file_name}"
-	echo "Existing file renamed to '${file_name}_old'." 
+    echo "File '$file_name' exists"
+    mv "$file_name" "old_$file_name"
+    echo "Renames '$file_name' to 'old_$file_name'"
 
-	echo "New empty file created with the name '$file_name'."
-
-	echo "Both conditions done together." 
-else 
-	echo 'File '$file_name' does not exist.\nNew empty file created.'
-	touch $file_name
+    touch "$file_name"
+    echo "new empty '$file_name' created"
+    echo "Both conditions done together"
+else
+    echo 'File '$file_name' doesnt exist\nNew File created'
+    touch "$file_name"
 fi
-
