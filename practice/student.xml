@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<university>
+    <students>
+        <student>
+            <slno>1</slno>
+            <Name>John</Name>
+            <usn>1MS23CI090</usn>
+            <Dept>CSE</Dept>
+        </student>
+        <student>
+            <slno>2</slno>
+            <Name>Alex</Name>
+            <usn>1MS23ME223</usn>
+            <Dept>MECH</Dept>
+        </student>
+    </students>
+    <departments>
+        <department>
+            <slno>1</slno>
+            <Name>Rash</Name>
+            <totalSt>100</totalSt>
+            <Deptname>CSE</Deptname>
+        </department>
+         <department>
+            <slno>1</slno>
+            <Name>Rash</Name>
+            <totalSt>100</totalSt>
+            <Deptname>CSE</Deptname>
+        </department>
+         <department>
+            <slno>1</slno>
+            <Name>Rash</Name>
+            <totalSt>100</totalSt>
+            <Deptname>CSE</Deptname>
+        </department>
+    </departments>
+</university>
