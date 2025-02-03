@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<university>
+    <students>
+        <student>
+            <sl>1</sl>
+            <DeptName>Alex</DeptName>
+            <usn>1RITCS001</usn>
+            <DeptName>CS</DeptName>
+        </student>
+        <student>
+            <sl>2</sl>
+            <DeptName>Smith</DeptName>
+            <usn>1RITDS040</usn>
+            <DeptName>DS</DeptName>
+        </student>
+        <student>
+            <sl>3</sl>
+            <DeptName>Saliena</DeptName>
+            <usn>1RITCV051</usn>
+            <DeptName>Civil</DeptName>
+        </student>
+        <student>
+            <sl>5</sl>
+            <DeptName>Elixabeth</DeptName>
+            <usn>1RITME011</usn>
+            <DeptName>Mechanical</DeptName>
+        </student>
+    </students>
+
+    <departments>
+<department>
+<serialNumber>1</serialNumber>
+<DeptName>CSE</DeptName>
+<departmentId>01</departmentId>
+<totalEnrolledStudents>170</totalEnrolledStudents>
+</department>
+<department>
+<serialNumber>2</serialNumber>
+<DeptName>DS</DeptName>
+<departmentId>02</departmentId>
+<totalEnrolledStudents>188</totalEnrolledStudents>
+</department>
+<department>
+<serialNumber>3</serialNumber>
+<DeptName>Civil</DeptName>
+<departmentId>03</departmentId>
+<totalEnrolledStudents>160</totalEnrolledStudents>
+</department>
+<department>
+<serialNumber>4</serialNumber>
+<DeptName>Mechanical</DeptName>
+<departmentId>04</departmentId>
+<totalEnrolledStudents>150</totalEnrolledStudents>
+</department>
+</departments>
+</university>

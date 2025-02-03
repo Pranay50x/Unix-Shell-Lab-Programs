@@ -1,0 +1,21 @@
+<student>
+            <sl>1</sl>
+            <Name>Alex</Name>
+            <usn>1RITCS001</usn>
+            <DeptName>CS</DeptName>
+        </student><student>
+            <sl>2</sl>
+            <Name>Smith</Name>
+            <usn>1RITDS040</usn>
+            <DeptName>DS</DeptName>
+        </student><student>
+            <sl>3</sl>
+            <Name>Saliena</Name>
+            <usn>1RITCV051</usn>
+            <DeptName>Civil</DeptName>
+        </student><student>
+            <sl>5</sl>
+            <Name>Elixabeth</Name>
+            <usn>1RITME011</usn>
+            <DeptName>Mechanical</DeptName>
+        </student>
